@@ -1,4 +1,12 @@
-# MQ 测试说明 (TESTING.md)
+# MQ 测试说明
+- 测试完成：是（2026-10-04）
+- 测试日期：2026-10-04
+- 测试内容：单元/集成覆盖 `core.EventBus`（发布订阅、优先级触发顺序、单段/多段通配路由、once 一次性、emit 中 off 延迟移除）与 `core.Module`（on/emit 命名空间钩子、构造边界）；注入测试针对订阅 pattern 被编译为正则的不可信输入（正则元字符字面化、`../` 路径穿越不跨 `:` 命名空间）；钩子测试覆盖注册→触发顺序、参数传递、单钩子异常失败隔离、未注册/已注销钩子安全 no-op。
+- 运行命令：`./gradlew test`（离线核心验证：javac + JUnit Console Launcher，见下文）
+- 测试框架：JUnit 5 (Jupiter)
+- 模型：豆包（Doubao）生成
+
+---
 
 本目录新增的测试位于 `src/test/java/com/yxpil/mq/core/`，针对 **事件驱动核心 `EventBus`** 与 **模块钩子基类 `Module`**（不依赖 Spring 容器，可独立运行）。
 
