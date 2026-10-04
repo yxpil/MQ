@@ -333,3 +333,15 @@ MyDao dao = dao(MyDao.class);   // Module 便捷方法，内部走 SpringContext
 ---
 
 Part of the BIT ecosystem — [github.com/yxpil/bit](https://github.com/yxpil/bit)
+
+---
+
+<div align="center">
+
+<a href="https://github.com/yxpil/MQ">
+  <img width="100%" src="https://alittlecatgirlpanel.yxp.hk/card?repo=yxpil/MQ" alt="gh-card · yxpil/MQ" />
+</a>
+
+<sub>Powered by <a href="https://alittlecatgirlpanel.yxp.hk"><b>gh-card</b></a> · 粉色手写体 README 仓库名片</sub>
+
+</div>
